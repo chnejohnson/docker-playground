@@ -4,10 +4,7 @@
 
 `docker run --name zookeeper --rm -p 2181:2181 -d zookeeper`
 
-- build images of mykafka
+- run kafka and zookeeper
 
-`docker build -t mykafka .`
+`docker-compose up -d`
 
-- run images on port 9092
-
-`docker run -p 9092:9092 --rm mykafka`
